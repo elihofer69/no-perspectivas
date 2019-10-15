@@ -51,7 +51,6 @@ body {
 	border-radius: 3px;
 	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
 	transition: all 300ms;
-	max-width: 80%;
 }
 
 .input input:focus, button:focus {
