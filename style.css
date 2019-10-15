@@ -106,6 +106,10 @@ input[type="submit"]:hover {
                             "centerLeft"
                             "centerRight";
     }
+    
+    .sct {
+        height: 50%;
+    }
 
     .login > form {
         width: 100%;
