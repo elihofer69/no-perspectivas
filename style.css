@@ -18,9 +18,9 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	padding: 60px 50px 60px 50px;
+	padding: 30px 25px 30px 25px;
 	box-sizing: border-box;
-	width: 200px;
+	width: 250px;
 	max-width: 80%;
 	zoom: 2;
 	border: .34px solid #FFA000;
@@ -35,11 +35,7 @@ body {
 }
 
 .input {
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%,0);
-	width: 50%;
+	text-align: center;
 }
 
 .input input, button {
@@ -47,7 +43,7 @@ body {
 	text-align: center;
 	border: none;
 	display: inline-block;
-	margin: 0;
+	margin: 0px;
 	outline: none;
 	border-radius: 3px;
 	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
@@ -59,9 +55,6 @@ body {
 }
 
 .input button {
-	position: absolute;
-	top: 3px;
-	right: -10px;
 	padding: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -77,7 +70,4 @@ body {
 
 .input button:active {
 	transform: scale(0.9);
-	padding-left: 15px;
-	padding-right: 15px;
-	right: -15px;
 }
