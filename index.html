@@ -1,198 +1,45 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<title>No Perspectivas</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="favicon/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
-<link rel="apple-touch-icon" href="favicon/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="favicon/favicon-144.png">
-<meta name="msapplication-config" content="favicon/browserconfig.xml">
-
+	<title>No Perspectivas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="img/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<style>
-
-body {
-	background-image: url('bg.jpeg');
-	background-attachment: fixed;
-	color: #333;
-}
-
-.box {
-	border-radius: 3px;
-	margin: auto;
-	padding: 35px;
-	background: #FFB74D;
-	box-shadow: 5px 5px 20px -10px rgba(0,0,0,0.5);
-	box-shadow: 5px 5px 20px -10px rgba(255,255,255,.5);
-	background-image: url('logo.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	border: .34px solid #FFA000;
-	max-width: 70vw;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.4);
-	text-align: center;
-	margin: auto;
-
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-.input {
-	position: relative;
-}
-
-.box input, button {
-	padding: 5px;
-	text-align: center;
-	border: none;
-	display: inline-block;
-	margin: 0;
-	outline: none;
-	border-radius: 3px;
-	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
-	transition: all 300ms;
-}
-
-.box input:focus, button:focus {
-	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
-}
-
-.box button {
-	position: absolute;
-	top: 3px;
-	right: -10px;
-	padding: 2px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: #FFC107;
-	color: #FF9100;
-}
-
-.box button:hover {
-	background: #FFB300;
-	color: #FFCC80;
-	transform: scale(1.2);
-}
-
-.box button:active {
-	transform: scale(0.9);
-	padding-left: 15px;
-	padding-right: 15px;
-	right: -15px;
-}
-
-
-
-</style>
 
 <body>
 
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="input">
-						<input id="password" type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
-						<button id="loginbutton" type="button">&#187;</button>
-					</div>
-				</div>
+	<div id="loginbox" class="bg">
+		<div class="box">
+			<div class="input">
+				<input id="password" type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+				<button id="loginbutton" type="button">&#187;</button>
 			</div>
 		</div>
 	</div>
 
-
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
-
-	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-
-	<script type="text/javascript">
-	"use strict";
-
-
-	function loadPage(pwd) {
-
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/index.html";
-
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
-
-
-	$("#loginbutton").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
-
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
-
-	</script>
+	<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
